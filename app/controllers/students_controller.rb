@@ -1,6 +1,6 @@
 class StudentsController < ActiveRecord::Base
 
-  def students
+  def index
     @student = Student.all
     render 'views/students/index.html.erb'
   end
